@@ -19,6 +19,7 @@ def division():
       print("Por favor, ingresa un número válido.")
     else:
       continuar = input("¿Quieres hacer otra división? (si/no): ").strip().lower()
-      if continuar != 'si':
-                menu()
-                break
+      if continuar == 'si':
+        continue
+      else:
+        break

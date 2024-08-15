@@ -13,12 +13,13 @@ def resta():
     try:
       numero1 = float(input("Ingrese el primer número: "))
       numero2 = float(input("Ingrese el segundo número: "))
-      resultado = resta(numero1, numero2)
+      resultado = numero1 - numero2
       print(f"El resultado de la resta es: {resultado}")
     except ValueError:
       print("Por favor, ingresa un número válido.")
     else:
       continuar = input("¿Quieres hacer otra resta? (si/no): ").strip().lower()
-      if continuar != 'si':
-                menu()
-                break
+      if continuar == 'si':
+        continue
+      else:
+        break

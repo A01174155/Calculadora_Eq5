@@ -19,9 +19,7 @@ def suma():
             print("Por favor, ingrese un número válido.")
 
         continuar = input("¿Desea realizar otra suma? (si/no): ").lower()
-        if continuar != 'si':
-          menu()
-
+        if continuar == 'si':
+            continue
+        else:
             break
-
-suma()

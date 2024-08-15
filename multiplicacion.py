@@ -7,20 +7,19 @@ Original file is located at
     https://colab.research.google.com/drive/12nwnYK0-NVUE8TexbpStF8JDydwVKxML
 """
 
-def multiplicacion(a,b):
-  return a * b
+def multiplicacion():
   print("Calculadora de Multiplicación")
   while True:
     try:
       numero1 = float(input("Ingresa el primer número: "))
       numero2 = float(input("Ingresa el segundo número: "))
-      resultado = multiplicacion(numero1, numero2)
+      resultado = numero1 * numero2
       print(f"El resultado de la multiplicación de {numero1}*{numero2} es: {resultado}")
     except ValueError:
      print("Por favor, ingresa un número válido.")
     else:
       continuar = input("¿Quieres hacer otra multiplicación? (si/no): ").strip().lower()
-      if continuar != 'si':
-                menu()
-                break
-
+      if continuar == 'si':
+        continue
+      else:
+        break
